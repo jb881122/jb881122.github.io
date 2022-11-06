@@ -4,6 +4,7 @@ title: Search
 permalink: /search/
 tipue_search_active: true
 exclude_from_search: true
+no_navigation: true
 ---
 
 <form action="/search/">
