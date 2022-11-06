@@ -1,1 +1,6 @@
-# jb881122.github.io
+---
+layout: page
+title: Home
+permalink: /about/
+---
+Hello, world!
