@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Home
-permalink: /about/
+permalink: /
 ---
 Hello, world!
