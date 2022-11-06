@@ -1,0 +1,4 @@
+# Output files
+_site/
+.jekyll-cache/
+Gemfile.lock
