@@ -1,7 +1,12 @@
 title: Joseph Beattie
 
-# Build settings
+# Minima settings
 theme: minima
+header_pages:
+  - index.md
+  - contact.md
+  - about-me.md
+  - resume.md
 
 # Tipue Search settings
 tipue_search:
