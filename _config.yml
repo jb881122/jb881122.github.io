@@ -2,3 +2,8 @@ title: Joseph Beattie
 
 # Build settings
 theme: minima
+
+# Tipue Search settings
+tipue_search:
+  include:
+    pages: true
