@@ -7,6 +7,10 @@ header_pages:
   - contact.md
   - about-me.md
   - resume.md
+author:
+no_footer_title: true
+no_footer_author: true
+copyright: Copyright (c) 2022 Joseph Beattie
 
 # Tipue Search settings
 tipue_search:

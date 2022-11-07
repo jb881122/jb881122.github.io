@@ -3,16 +3,21 @@
 
   <div class="wrapper">
 
+    {%- if site.no_footer_title != true -%}
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    {%- endif -%}
 
+    {%- if site.email or site.no_footer_author != true -%}
     <div class="footer-col-wrapper">
       <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
+            {%- if site.no_footer_author != true -%}
+              {%- if site.author -%}
+                {{ site.author | escape }}
+              {%- else -%}
+                {{ site.title | escape }}
+              {%- endif -%}
             {%- endif -%}
             </li>
             {%- if site.email -%}
@@ -28,6 +33,13 @@
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
       </div>
+    </div>
+    {%- endif -%}
+
+    {%- if site.copyright -%}
+      <small class="p-name">{{ site.copyright | escape }}</small>
+    {%- endif -%}
+      
     </div>
 
   </div>
