@@ -3,10 +3,11 @@ layout: page
 title: Home
 permalink: /
 tipue_search_active: true
+has_custom_header: true
 ---
-
-<center><h1>Projects</h1></center>
-
+<header class="post-header">
+  <h1 class="post-title">Projects:</h1>
+</header>
 <div style="width: 100%;">
   <a style="color: #000000;" href="javascript:void(0);">
     <img style="display: inline-block; width: 100px;" src="{{ "/assets/univ_thumb.png" | relative_url }}" />
