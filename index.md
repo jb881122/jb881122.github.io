@@ -27,7 +27,7 @@ has_custom_header: true
     <div style="display: inline-block; padding-left: 10px; word-wrap: break-word; max-width: 75%; vertical-align: middle;">
       <b><u>CollabVM Mini</u></b>
       <br />
-      Much of the functionality of the CollabVM project (allowing multiple users online to use a virtual machine) rewritten to use with less powerful devices
+      Much of the functionality of the CollabVM project (allowing multiple users online to use a virtual machine at once) rewritten to use with less powerful devices
       <br />
       <div style="color: #7f7f7f">(link coming soon)</div>
     </div>
