@@ -4,9 +4,9 @@ title: Joseph Beattie
 theme: minima
 header_pages:
   - index.md
-  - contact.md
   - about-me.md
   - resume.md
+  - contact.md
 author:
 no_footer_title: true
 no_footer_author: true
