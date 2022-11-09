@@ -18,6 +18,10 @@
         <br />
         <b>Language:</b> {{ include.language }}
         {% endif %}
+        {% if include.timeframe %}
+        <br />
+        <b>Timeframe:</b> {{ include.timeframe }}
+        {% endif %}
         {% unless include.dest %}
         <br />
         <div class="proj-minor">(more info coming soon)</div>

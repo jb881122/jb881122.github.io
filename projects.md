@@ -4,7 +4,37 @@ title: Projects
 permalink: /projects/
 tipue_search_active: true
 ---
-## Personal Projects
-{% include project.html thumb='/assets/univ_thumb.png' header='Universal Windows 1.x Display Driver' desc='Allows this old software from 1985 to take advantage of modern high-resolution and color displays' %}
-{% include project.html thumb='/assets/cvmmini_thumb.png' header='CollabVM Mini' desc='Much of the functionality of the CollabVM project (allowing multiple users online to use a virtual machine at once) rewritten to use with less powerful devices' %}
-{% include project.html thumb='/assets/kex16_thumb.png' dest='https://github.com/jb881122/kex16' header='16-bit Extended Kernel' desc='Allows extremely-old versions of Windows to run slightly-less-old applications' direct_link=true language='C, x86 16-bit Assembly' %}
+### School
+{% include project.html 
+  thumb='/assets/gtfs_thumb.png'
+  dest='/projects/gtfs/'
+  header='GTFS Viewer'
+  desc='Displays and modifies various details within a set of General Transit Feed Specification (GTFS) files'
+  language='Java'
+  timeframe='October - November 2022'
+  %}
+
+### Personal
+{% include project.html 
+  thumb='/assets/kex16_thumb.png'
+  dest='https://github.com/jb881122/kex16'
+  header='16-bit Extended Kernel'
+  desc='Allows extremely-old versions of Windows to run slightly-less-old applications'
+  direct_link=true
+  language='C, x86-16 Assembly'
+  timeframe='October 2022 - Current'
+  %}
+{% include project.html
+  thumb='/assets/cvmmini_thumb.png'
+  header='CollabVM Mini'
+  desc='Much of the functionality of the CollabVM project (allowing multiple users online to use a virtual machine at once) rewritten to use with less powerful devices'
+  language='C'
+  timeframe='October 2021 - September 2022 (on and off)'
+  %}
+{% include project.html
+  thumb='/assets/univ_thumb.png'
+  header='Universal Windows 1.x Display Driver'
+  desc='Allows this old software from 1985 to take advantage of modern high-resolution and color displays'
+  language='C, x86-16 Assembly'
+  timeframe='February 2022 - May 2022'
+  %}
