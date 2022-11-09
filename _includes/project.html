@@ -1,4 +1,4 @@
-<div class="proj-container">
+<div class="proj-container{% if include.dest %} proj-haslink{% endif %}">
   {%- if include.dest -%}
     {% if include.direct_link %}
     <a class="proj-link" href="{{ include.dest }}">
