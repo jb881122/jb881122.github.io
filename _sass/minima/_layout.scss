@@ -7,7 +7,11 @@
   min-height: $spacing-unit * 1.865;
 
   // Positioning context for the mobile navigation icon
-  position: relative;
+  position: fixed;
+
+  z-index: 999;
+  width: 100%;
+  background-color: $background-color;
 }
 
 .site-title {
@@ -15,7 +19,7 @@
   font-weight: 300;
   line-height: $base-line-height * $base-font-size * 2.25;
   letter-spacing: -1px;
-  margin-bottom: 0;
+  margin: 0 10px 0 0;
   float: left;
 
   &,
@@ -44,6 +48,10 @@
       margin-right: 10px;
     }
 
+    &:nth-last-child(2) {
+      margin-right: 25px;
+    }
+
     display: inline-block;
   }
 
@@ -51,7 +59,7 @@
     background-color: $nav-current-bg;
   }
 
-  @include media-query($on-palm) {
+  @include media-query($on-palm-header) {
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
@@ -167,7 +175,7 @@
   }
 }
 
-@include media-query($on-palm) {
+@include media-query($on-palm-header) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
@@ -181,7 +189,7 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: $spacing-unit * 2.865 0;
   flex: 1;
 }
 
@@ -265,36 +273,55 @@
 
   .proj-link {
     color: #000000;
-    
-    .proj-img {
-      display: inline-block;
-      width: 300px;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .proj-img {
+    display: inline-block;
+    width: 300px;
+  }
+
+  .proj-text {
+    display: inline-block;
+    padding-left: 20px;
+    word-wrap: break-word;
+    vertical-align: middle;
+
+    width: -webkit-calc(98% - 320px);
+    width: -moz-calc(98% - 320px);
+    width: calc(98% - 320px);
+    height: 100%;
+    position: relative;
+
+    .proj-header {
+      font-weight: bold;
+      text-decoration: underline;
+
+      &.proj-nolink {
+        text-decoration: none;
+      }
     }
 
-    .proj-text {
-      display: inline-block;
-      padding-left: 20px;
-      word-wrap: break-word;
-      vertical-align: middle;
-
-      width: -webkit-calc(95% - 320px);
-      width: -moz-calc(95% - 320px);
-      width: calc(95% - 320px);
+    .proj-minor {
+      color: #7f7f7f;
     }
   }
 
   @include media-query($on-palm) {
-    .proj-link {
-      .proj-img {
-        display: block;
-        margin: auto;
-      }
+    padding: 5px 0 50px 0;
 
-      .proj-text {
-        display: block;
-        padding-left: 0px;
-        width: 100%;
-      }
+    .proj-img {
+      display: block;
+      margin: auto;
+    }
+
+    .proj-text {
+      display: block;
+      padding-left: 0;
+      width: 100%;
     }
   }
 }

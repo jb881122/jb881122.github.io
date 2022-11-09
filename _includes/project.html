@@ -1,15 +1,35 @@
 <div class="proj-container">
-  <a class="proj-link" href="{{ include.dest }}">
-    <img class="proj-img" src="{{ include.thumb | relative_url }}" />
-    <div class="proj-text">
-      <b><u>{{ include.header }}</u></b>
-      <br />
-      {{ include.desc }}
-      {% if include.coming_soon %}
-      <br />
-      <div style="color: #7f7f7f">(link coming soon)</div>
-      {% endif %}
+  {%- if include.dest -%}
+    {% if include.direct_link %}
+    <a class="proj-link" href="{{ include.dest }}">
+    {% else %}
+    <a class="proj-link" href="{{ include.dest | relative_url }}">
+    {% endif %}
+  {%- endif -%}
+    <div>
+      <img class="proj-img" src="{{ include.thumb | relative_url }}" />
+      <div class="proj-text">
+        <div class="proj-header{% unless include.dest %} proj-nolink{% endunless %}">
+          {{ include.header }}
+        </div>
+        {{ include.desc }}
+        <br />
+        {% if include.language %}
+        <br />
+        <b>Language:</b> {{ include.language }}
+        {% endif %}
+        {% unless include.dest %}
+        <br />
+        <div class="proj-minor">(more info coming soon)</div>
+        {% endunless %}
+        {% if include.direct_link %}
+        <br />
+        <div class="proj-minor">(direct link)</div>
+        {% endif %}
+      </div>
     </div>
+  {% if include.dest %}
   </a>
+  {% endif %}
 </div>
 <br />

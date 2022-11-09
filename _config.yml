@@ -5,6 +5,7 @@ theme: minima
 header_pages:
   - index.md
   - about-me.md
+  - projects.md
   - resume.md
   - contact.md
 author:
