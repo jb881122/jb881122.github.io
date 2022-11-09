@@ -289,9 +289,18 @@ h1, h2, h3, h4 {
     }
   }
 
-  .proj-img {
+  .proj-img-container {
     display: inline-block;
+    vertical-align: middle;
     width: 300px;
+    background-color: #9fafbf;
+
+    .proj-img {
+      display: block;
+      max-width: 300px;
+      max-height: 300px;
+      margin: auto;
+    }
   }
 
   .proj-text {
@@ -327,7 +336,7 @@ h1, h2, h3, h4 {
   @include media-query($on-palm) {
     padding: 5px 0 50px 0;
 
-    .proj-img {
+    .proj-img-container {
       display: block;
       margin: auto;
     }

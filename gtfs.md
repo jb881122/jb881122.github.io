@@ -5,6 +5,10 @@ permalink: /projects/gtfs/
 tipue_search_active: true
 ---
 
+<div style="display: block; background-color: #9fafbf;">
+  <img src="{{ "/assets/gtfs.png" | relative_url }}" style="display: block; margin: auto; max-width: 100%; max-height: 600px;" />
+</div><br /><br />
+
 ### Summary
 <b>Context:</b> This was a project for my SE 2030 class at MSOE.
 <br /><br />

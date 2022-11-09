@@ -7,7 +7,9 @@
     {% endif %}
   {%- endif -%}
     <div>
-      <img class="proj-img" src="{{ include.thumb | relative_url }}" />
+      <div class="proj-img-container">
+        <img class="proj-img" src="{{ include.thumb | relative_url }}" />
+      </div>
       <div class="proj-text">
         <div class="proj-header{% unless include.dest %} proj-nolink{% endunless %}">
           {{ include.header }}
