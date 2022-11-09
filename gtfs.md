@@ -26,6 +26,10 @@ tipue_search_active: true
 <br /><br />
 
 ### Analysis
+<b>What I did well:</b> I was good at making sure that the rest of the group did everything that they planned to do, putting together the deliverables for many of the labs. I also paid special attention to the timing of our program, creating a utility to benchmark imports and exports with and see where the slowest parts of our program were.
+<br /><br />
+<b>New skills/knowledge:</b> Before this project, I had little experience developing software in a group. With this project, I learned how to manage a code repository in a group, including branching, issue tracking, and merge/pull requests. This project also helped be brush up my Java knowledge, since at that point, it had been three months since I worked with it.
+<br /><br />
 <b>What went well:</b> We did a good job at thoroughly testing our program before calling it finished for each lab. Our group was the only one that never ran into an issue while demonstrating our program to the professor.
 <br /><br />
-<b>New skills/knowledge:</b> Before this project, I had little experience developing software in a group. There was a new element of 
+<b>What could use improvement:</b> Time management was a big one. Often, we would all wait until the last day or two before a lab was due to pick up the pace working on it.

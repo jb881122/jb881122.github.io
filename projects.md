@@ -17,9 +17,9 @@ tipue_search_active: true
   thumb='/assets/swerve.jpg'
   dest='/projects/swerve/'
   header='Robot Tri-Swerve'
-  desc='Allows a robot with three wheels controlled by independent speed and direction motors to navigate a FIRST Robotics game floor (for the 2019-2020 season)'
+  desc='Allows a robot with three wheels controlled by independent speed and direction motors to navigate a FIRST Robotics game floor (for the 2020 season)'
   language='Java'
-  timeframe='November 2019 - March 2020'
+  timeframe='January - February 2020'
   %}
 
 ### Personal
