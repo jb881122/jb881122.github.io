@@ -7,9 +7,9 @@
     <h2 class="footer-heading">{{ site.title | escape }}</h2>
     {%- endif -%}
 
-    {%- if site.email or site.no_footer_author != true -%}
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+      <div class="footer-col footer-col-1{% unless site.description %}-wide{% endunless %}">
+        {%- if site.email or site.no_footer_author != true -%}
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.no_footer_author != true -%}
@@ -24,22 +24,21 @@
             <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
             {%- endif -%}
         </ul>
+        {%- endif -%}
+        {%- if site.copyright -%}
+        <small class="p-name">{{ site.copyright | escape | replace: "(c)", "&#169;" }}</small>
+        {%- endif -%}
       </div>
 
-      <div class="footer-col footer-col-2">
+      <div class="footer-col footer-col-2{% unless site.description %}-wide{% endunless %}">
         {%- include social.html -%}
       </div>
 
+      {%- if site.description -%}
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
       </div>
-    </div>
-    {%- endif -%}
-
-    {%- if site.copyright -%}
-      <small class="p-name">{{ site.copyright | escape }}</small>
-    {%- endif -%}
-      
+      {%- endif -%}
     </div>
 
   </div>

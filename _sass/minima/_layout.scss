@@ -132,6 +132,7 @@
 .social-media-list {
   list-style: none;
   margin-left: 0;
+  margin-bottom: 0;
 }
 
 .footer-col-wrapper {
@@ -143,7 +144,7 @@
 
 .footer-col {
   float: left;
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: 0;
   padding-left: $spacing-unit / 2;
 }
 
@@ -152,9 +153,20 @@
   width:         calc(35% - (#{$spacing-unit} / 2));
 }
 
+.footer-col-1-wide {
+  width: -webkit-calc(70% - (#{$spacing-unit} / 2));
+  width:         calc(70% - (#{$spacing-unit} / 2));
+}
+
 .footer-col-2 {
   width: -webkit-calc(20% - (#{$spacing-unit} / 2));
   width:         calc(20% - (#{$spacing-unit} / 2));
+}
+
+.footer-col-2-wide {
+  width: -webkit-calc(30% - (#{$spacing-unit} / 2));
+  width:         calc(30% - (#{$spacing-unit} / 2));
+  text-align: right;
 }
 
 .footer-col-3 {
@@ -175,11 +187,13 @@
   }
 }
 
-@include media-query($on-palm-header) {
+@include media-query($on-palm) {
   .footer-col {
     float: none;
     width: -webkit-calc(100% - (#{$spacing-unit} / 2));
     width:         calc(100% - (#{$spacing-unit} / 2));
+    text-align: center;
+    margin-bottom: $spacing-unit / 2;
   }
 }
 
@@ -244,6 +258,13 @@
 h1, h2, h3, h4 {
   color: $theme-color-dark;
 
+  @include media-query($on-palm) {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.mobile-center {
   @include media-query($on-palm) {
     width: 100%;
     text-align: center;
@@ -352,7 +373,8 @@ h1, h2, h3, h4 {
 
 .about-container {
   width: 100%;
-  padding-top: 50px;
+  padding: 5px;
+  margin-top: 50px;
 
   .about-text {
     display: inline-block;
@@ -388,8 +410,9 @@ h1, h2, h3, h4 {
 
 .home-container {
   width: 100%;
-  padding-bottom: 50px;
-  border-bottom: 1px solid $theme-color-light;
+  padding: 5px;
+  margin-bottom: 50px;
+  background-color: #cfdfef;
 
   .home-text {
     display: inline-block;
