@@ -352,6 +352,7 @@ h1, h2, h3, h4 {
 
 .about-container {
   width: 100%;
+  padding-top: 50px;
 
   .about-text {
     display: inline-block;
@@ -387,6 +388,8 @@ h1, h2, h3, h4 {
 
 .home-container {
   width: 100%;
+  padding-bottom: 50px;
+  border-bottom: 1px solid $theme-color-light;
 
   .home-text {
     display: inline-block;
