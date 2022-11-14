@@ -12,6 +12,7 @@ no_footer_title: true
 no_footer_author: true
 copyright: Copyright (c) 2022 Joseph Beattie
 github_username: jb881122
+no_footer_desc: true
 
 # Tipue Search settings
 tipue_search:

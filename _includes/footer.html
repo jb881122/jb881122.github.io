@@ -8,7 +8,7 @@
     {%- endif -%}
 
     <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1{% unless site.description %}-wide{% endunless %}">
+      <div class="footer-col footer-col-1{% if site.no_footer_desc %}-wide{% endif %}">
         {%- if site.email or site.no_footer_author != true -%}
         <ul class="contact-list">
           <li class="p-name">
@@ -30,15 +30,15 @@
         {%- endif -%}
       </div>
 
-      <div class="footer-col footer-col-2{% unless site.description %}-wide{% endunless %}">
+      <div class="footer-col footer-col-2{% if site.no_footer_desc %}-wide{% endif %}">
         {%- include social.html -%}
       </div>
 
-      {%- if site.description -%}
+      {%- unless site.no_footer_desc -%}
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
       </div>
-      {%- endif -%}
+      {%- endunless -%}
     </div>
 
   </div>
