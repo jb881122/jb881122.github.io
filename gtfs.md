@@ -5,9 +5,7 @@ permalink: /projects/gtfs/
 tipue_search_active: true
 ---
 
-<div style="display: block; background-color: #cfdfef;">
-  <img src="{{ "/assets/gtfs.png" | relative_url }}" style="display: block; margin: auto; max-width: 100%; max-height: 600px;" />
-</div><br /><br />
+{% include proj-header.html top_image='/assets/gtfs.png' %}
 
 ### Summary
 <b>Context:</b> This was a project for my SE 2030 class at MSOE.
