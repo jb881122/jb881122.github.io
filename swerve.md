@@ -24,10 +24,10 @@ tipue_search_active: true
 <br /><br />
 
 ### Analysis
-<b>What I did well:</b> I adjusted to the syntax of the Java language fairly quickly and was able to start writing code for the robot almost right off the bat.
+<b>What I did well:</b> I adjusted to the syntax of the Java language fairly quickly and was able to start writing code for the robot almost right off the bat. I was also able to figure out most of the geometry of the swerve drive nearly right away. I improved my programming skills after figuring out the mistakes I made and fixing them.
 <br /><br />
-<b>New skills/knowledge:</b> I gained experience with the basics of the Java programming language, and I was able to refine my geometry knowledge when writing the program.
+<b>New skills/knowledge:</b> I gained experience with the basics of the Java programming language, and I was able to refine my geometry knowledge when writing the program. I also learned how to make a continuously looped program and adjust the power of a motor based on an encoder value (the position of the motor). This was one of my first times collaborating with someone else on code.
 <br /><br />
-<b>What went well:</b> The robot was able to navigate (in the classroom, at least) using my code, and at the end, we were able to make an effective program for driving the robot. 
+<b>What went well:</b> The robot was able to navigate (in the classroom, at least) using my code. In the end, we were able to diagnose what was wrong with my code and combine it with my teammate's code to make an effective program for driving the robot.
 <br /><br />
-<b>What could use improvement:</b> Being new to the language, I was often using Google to figure out how to do things without fully understanding the code. I ended up making liberal use of threads, which seemed to work when we were testing it in the classroom, but it broke when running it out on the field.
+<b>What could use improvement:</b> Being new to the language, I was often using Google to figure out how to do things without fully understanding the code. I ended up making liberal use of threads, which seemed to work when we were testing it in the classroom, but it shut down the robot when running out on the field. I also didn't pay attention to the sign when doing angle calculations, causing the wheels to sometimes spin wildly to get to a position.

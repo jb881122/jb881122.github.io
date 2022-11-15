@@ -28,6 +28,6 @@ tipue_search_active: true
 <br /><br />
 <b>New skills/knowledge:</b> Before this project, I had little experience developing software in a group. With this project, I learned how to manage a code repository in a group, including branching, issue tracking, and merge/pull requests. This project also helped be brush up my Java knowledge, since at that point, it had been three months since I worked with it.
 <br /><br />
-<b>What went well:</b> We did a good job at thoroughly testing our program before calling it finished for each lab. Our group was the only one that never ran into an issue while demonstrating our program to the professor.
+<b>What went well:</b> We did a good job at thoroughly testing our program before calling it finished for each lab. Our group was the only one that never ran into an issue while demonstrating our program to the professor. We were also good at dividing up our work, as everyone always had tasks that we needed them to do, and everyone made roughly equal contributions to the program.
 <br /><br />
-<b>What could use improvement:</b> Time management was a big one. Often, we would all wait until the last day or two before a lab was due to pick up the pace working on it.
+<b>What could use improvement:</b> Time management was a big one. Often, we would all wait until the last day or two before a lab was due to pick up the pace working on it. Another area was commenting our code better while writing it, as many of the comments in our code were added after-the-fact by someone other than the person who wrote the code.

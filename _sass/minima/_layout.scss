@@ -121,6 +121,11 @@
 .site-footer {
   border-top: 1px solid $theme-color-light;
   padding: $spacing-unit 0;
+
+  .svg-icon,
+  .username {
+    vertical-align: middle;
+  }
 }
 
 .footer-heading {
